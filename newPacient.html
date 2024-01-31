@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paciente nuevo</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
+	<link rel="stylesheet" href="lux.css">
+</head>
+<body>
+
+	<form class="p-5" id="formm">
+		<div class="form-group">
+			<input type="text" id="pacientName" placeholder="Nombre completo del paciente" class="form-control" autofocus required>
+		</div>
+		<div class="form-group">
+			<input type="number" class="form-control" placeholder="Edad del paciente" id="age" required></input>
+		</div>
+		<div class="form-group">
+			<input type="number" id="DNI" placeholder="DNI del paciente" class="form-control" required>
+		</div>
+		<div class="form-floating mb-3">
+    		<input type="email" class="form-control" id="email" placeholder="nombre@gmail.com" required>
+    		<label for="email" required>Dirección e-mail</label>
+  		</div>
+		<div class="form-group">
+			<select class="form-select" id="gender">
+				<option selected>Desconocido</option>
+				<option>Hombre</option>
+				<option>Mujer</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<input type="text" id="obraSocial" class="form-control" placeholder="Nombre de la obra social">
+			<br>
+			<input type="number" id="numeroAfiliado" placeholder="Número de afiliado" class="form-control">
+		</div>
+		<div class="form-group">
+			<textarea class="form-control" placeholder="Información sobre el paciente" id="info" rows="6"></textarea>
+		</div>
+		<center>
+			<button class="btn btn-primary" id="btn">Guardar</button>
+		</center>
+	</form>
+
+
+
+<script type="text/javascript" src="render-newPacient.js"></script>
+</body>
+</html>

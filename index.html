@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pacientes</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
+	<link rel="stylesheet" href="lux.css">
+</head>
+<body>
+
+
+<center>
+	
+
+	<form class="p-5" id="formm">
+		<div class="form-group">
+      		<label for="pacientList" class="form-label mt-4">Lista de pacientes</label>
+      		<input placeholder="Nombre del paciente" class="form-control" type="text" id="pacientName" for="pacientList" style="display: block" autofocus list="pacientList">
+      		<datalist id="pacientList"></datalist>
+    	</div>
+    	<div class="form-group">
+    		<button class="btn btn-primary">Buscar paciente</button>
+    	</div>
+	</form>
+
+	<div class="card text-black bg-secondary mb-3" style="max-width: 20rem;">
+		<div class="card-body">
+			<h4 class="card-title">Nuevo paciente</h4>
+			<p class="card-text">
+				Para ingresar un nuevo paciente, presione el boton de abajo.
+			</p>
+		</div>
+	</div>
+
+	<button class="btn btn-primary" id="newPacient">Registrar paciente</button>
+
+
+
+
+
+</center>
+
+
+
+<script type="text/javascript" src="index-render.js"></script>
+</body>
+</html>

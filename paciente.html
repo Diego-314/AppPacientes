@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Paciente
+	</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
+	<link rel="stylesheet" href="lux.css">
+</head>
+<body>
+
+
+
+	<form class="p-5" id="formm">
+		<div class="form-group">
+			<input type="text" id="pacientName" placeholder="Nombre completo del paciente" class="form-control" autofocus>
+		</div>
+		<div class="form-group">
+			<input type="number" class="form-control" placeholder="Edad del paciente" id="age"></input>
+		</div>
+		<div class="form-group">
+			<input type="number" id="DNI" placeholder="DNI del paciente" class="form-control">
+		</div>
+		<div class="form-floating mb-3">
+    		<input type="email" class="form-control" id="email" placeholder="nombre@gmail.com">
+    		<label for="email">Dirección e-mail</label>
+  		</div>
+		<div class="form-group">
+			<select class="form-select" id="gender">
+				<option selected>Desconocido</option>
+				<option>Hombre</option>
+				<option>Mujer</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<input type="text" id="obraSocial" class="form-control" placeholder="Nombre de la obra social">
+			<br>
+			<input type="number" id="numeroAfiliado" placeholder="Número de afiliado" class="form-control">
+		</div>
+		<div class="form-group">
+			<textarea class="form-control" placeholder="Información sobre el paciente" id="info"></textarea>
+		</div>
+		<center>
+			<button class="btn btn-primary" id="modifyBtn">
+				Guardar cambios
+			</button>
+			<button class="btn btn-primary" id="closeBtn">
+				Cerrar
+			</button>
+			<button class="btn btn-primary" id="removeBtn">
+				Borrar paciente
+			</button>
+		</center>
+	</form>
+
+
+
+
+<script type="text/javascript" src="render-paciente.js"></script>
+</body>
+</html>
